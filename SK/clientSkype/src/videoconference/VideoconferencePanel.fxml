@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="videoconference.VideoconferencePanel">
+  <children>
+    <ImageView id="input" fx:id="inputImage" fitHeight="332.0" fitWidth="442.66668613224965" layoutX="79.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+    <Button id="hangOut" fx:id="hangupButton" layoutX="261.0" layoutY="361.0" minHeight="15.9998779296875" mnemonicParsing="false" onAction="#hangup" prefHeight="28.0" text="Zakończ" />
+    <ImageView fx:id="outputImage" fitHeight="105.74997401466372" fitWidth="140.99996948242188" layoutX="445.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true" />
+  </children>
+</AnchorPane>

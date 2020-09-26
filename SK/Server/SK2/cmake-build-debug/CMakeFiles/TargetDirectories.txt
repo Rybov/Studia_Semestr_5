@@ -1,0 +1,3 @@
+/home/jasiek/Dokumenty/sk/SK2/Server/SK2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/jasiek/Dokumenty/sk/SK2/Server/SK2/cmake-build-debug/CMakeFiles/SK2.dir
+/home/jasiek/Dokumenty/sk/SK2/Server/SK2/cmake-build-debug/CMakeFiles/edit_cache.dir

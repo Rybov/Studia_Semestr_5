@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++14 -pthread -g   CMakeFiles/SK2.dir/main.cpp.o  -o SK2 

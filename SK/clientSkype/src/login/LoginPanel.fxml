@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="login.LoginPanel">
+  <children>
+    <AnchorPane fx:id="LoginPane" layoutX="64.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0">
+      <children>
+        <Label layoutX="62.0" layoutY="30.0" text="Zaloguj się" />
+        <TextField fx:id="LoginLoginField" layoutX="15.0" layoutY="62.0" promptText="login" />
+        <PasswordField fx:id="LoginPasswordField" layoutX="15.0" layoutY="100.0" promptText="Password" />
+        <Button fx:id="LoginButton" layoutX="63.0" layoutY="139.0" mnemonicParsing="false" onAction="#loginAction" text="Zaloguj" />
+      </children>
+    </AnchorPane>
+    <AnchorPane fx:id="RegisterPane" layoutX="348.0" layoutY="81.0" prefHeight="207.0" prefWidth="200.0">
+      <children>
+        <Label layoutX="53.0" layoutY="30.0" text="Zarejestruj się" />
+        <TextField fx:id="RegisterLoginField" layoutX="15.0" layoutY="62.0" promptText="login" text="" />
+        <PasswordField id="LoginPasswordField" fx:id="RegisterPasswordField" layoutX="15.0" layoutY="100.0" promptText="Password" />
+        <Button fx:id="RegisterButton" layoutX="51.0" layoutY="172.0" mnemonicParsing="false" onAction="#registerAction" text="Zarejestruj" />
+        <PasswordField fx:id="RegisterPasswordAgainField" layoutX="14.0" layoutY="136.0" promptText="Confirm Password" />
+      </children>
+    </AnchorPane>
+    <AnchorPane layoutX="66.0" layoutY="288.0" prefHeight="98.0" prefWidth="482.0">
+      <children>
+        <Label fx:id="ErrorMessageLabel" alignment="CENTER" contentDisplay="LEFT" layoutX="0.0" layoutY="0.0" prefHeight="98.0" prefWidth="482.0" text="" textAlignment="LEFT" textFill="RED" wrapText="true" />
+      </children>
+    </AnchorPane>
+  </children>
+</Pane>

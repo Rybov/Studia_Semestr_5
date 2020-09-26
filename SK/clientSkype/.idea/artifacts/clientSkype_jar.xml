@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="clientSkype:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/clientSkype_jar</output-path>
+    <root id="archive" name="clientSkype.jar">
+      <element id="module-output" name="clientSkype" />
+      <element id="extracted-dir" path="$USER_HOME$/opencv-4.1.1/build/bin/opencv-411.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

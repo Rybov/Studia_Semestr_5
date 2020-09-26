@@ -1,0 +1,96 @@
+-> do serwera
+<- do usera
+(L/R) L lub R
+
+->
+ŻĄDANIE ZALOGOWANIA/REJESTRACJI 
+(wielkość)
+(L/R)
+login
+hasło
+
+->
+WYLOGOWANO
+(wielkość)
+LO
+
+<-
+CZY ZALOGOWANO/ZAREJESTROWAWN
+(wielkość)
+(L/R)
+(1/0)
+
+->
+ODŚWIEŻ LISTĘ ZNAJOMYCH (LISTĘ ORAZ ICH AKTYWNOŚĆ) 
+(wielkość)
+F
+
+<-
+ZWRACANA LISTA ZNAJOMYCH
+(wielkość)
+F
+login1
+login2
+login3
+
+->
+DODAJ DO GRONA ZNAJOMYCH
+(wielkość)
+FA
+Login
+
+->
+USUŃ ZNAJOMEGO
+(wielkość)
+FD
+Login
+
+->
+POŁĄCZ SIĘ Z INNYM UŻYTKOWNIKIEM
+(wielkość)
+C
+loginRozmówcy
+WIELKOŚĆ KLATKI
+SZEROKOŚĆ
+DŁUGOŚĆ
+WIELKOŚĆ DŹWIĘKU
+
+<-
+NADCHODZĄCE POŁĄCZENIE
+(wielkość)
+C
+loginDzwoniącego
+WIELKOŚĆ KLATKI
+SZEROKOŚĆ
+DŁUGOŚĆ
+WIELKOŚĆ DŹWIĘKU
+
+->
+PRZYJĘCIE/ODRZUCENIE ROZMOWY
+(wielkość)
+(Y/N)
+WIELKOŚĆ KLATKI
+SZEROKOŚĆ
+DŁUGOŚĆ
+WIELKOŚĆ DŹWIĘKU
+
+
+->
+ZAKOŃCZ POŁĄCZENIE
+(wielkość)
+E
+
+<-
+ROZMÓWCA ZAKOŃCZYŁ POŁĄCZENIE
+(wielkość)
+E
+
+<-
+UŻYTKOWNIK ZAJĘTY
+(wielkość)
+IT
+
+<-
+UŻYTKOWNIK WYLOGOWANY
+(wielkość)
+ILO

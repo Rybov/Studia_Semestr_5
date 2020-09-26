@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jasiek/Dokumenty/sk/SK2/Server/SK2/User.h
+string
+-
+vector
+-
+
+/home/jasiek/Dokumenty/sk/SK2/Server/SK2/main.cpp
+sys/types.h
+-
+sys/socket.h
+-
+netinet/in.h
+-
+unistd.h
+-
+cstdio
+-
+cstdlib
+-
+cstring
+-
+pthread.h
+-
+iostream
+-
+string
+-
+vector
+-
+sstream
+-
+thread
+-
+csignal
+-
+User.h
+/home/jasiek/Dokumenty/sk/SK2/Server/SK2/User.h
+

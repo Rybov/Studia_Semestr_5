@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#outClicked" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="desktop.MainPanel">
+  <children>
+    <Separator layoutX="436.0" layoutY="0.0" orientation="VERTICAL" prefHeight="400.0" />
+    <Separator layoutX="0.0" layoutY="26.0" prefWidth="600.0" />
+    <AnchorPane layoutX="440.0" layoutY="0.0" minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="160.0">
+      <children>
+        <TextField id="searchFriendsField" fx:id="friendsSearchField" layoutX="0.0" layoutY="26.0" onAction="#searchInList"  prefHeight="24.0" prefWidth="158.0" promptText="Wyszukaj..." />
+        <ListView fx:id="friendList" layoutX="0.0" layoutY="50.0" onMouseClicked="#selectUser" prefHeight="350.0" prefWidth="160.0" />
+        <Label contentDisplay="LEFT" layoutX="0.0" layoutY="6.0" prefWidth="160.0" text="Kontakty" textAlignment="CENTER" />
+      </children>
+    </AnchorPane>
+    <Button fx:id="menuSearchButton" layoutX="2.0" layoutY="4.0" mnemonicParsing="false" onAction="#searchfriendsViewSet" text="Wyszukaj użytkownika" />
+    <Button id="logoutButton" fx:id="menuLogoutButton" layoutX="183.0" layoutY="4.0" mnemonicParsing="false" onAction="#logout" text="Wyloguj" />
+    <AnchorPane fx:id="findUserPane" layoutX="2.0" layoutY="30.0" prefHeight="370.0" prefWidth="434.0" visible="false">
+      <children>
+        <TextField id="searchNotFriendField" fx:id="notFriendSearchField" layoutX="260.0" layoutY="30.0" prefHeight="24.0" prefWidth="160.0" promptText="Wpisz nick..." text="" />
+        <Label layoutX="276.0" layoutY="14.0" text="Znajdź użytkownika:" />
+        <AnchorPane id="findedUserPane" fx:id="foundUserPane" layoutX="117.0" layoutY="85.0" prefHeight="200.0" prefWidth="200.0" visible="false">
+          <children>
+            <Label fx:id="username" layoutX="82.0" layoutY="48.0" text="Nick" visible="true">
+              <font>
+                <Font size="17.0" fx:id="x1" />
+              </font>
+            </Label>
+            <Button id="sendButton" fx:id="callButton" layoutX="60.0" layoutY="79.0" mnemonicParsing="false" onAction="#callFromSearch" text="Zadzwoń" />
+            <Button id="sendButton" fx:id="addOrDeleteNotFriend" layoutX="24.0" layoutY="108.0" mnemonicParsing="false" onAction="#addOrDeleteSearch" text="Dodaj do kontaktów" />
+          </children>
+        </AnchorPane>
+        <Button id="sendButton" layoutX="301.0" layoutY="57.0" mnemonicParsing="false" onAction="#sendSearchRequest" text="Wyszukaj" />
+      </children>
+    </AnchorPane>
+    <AnchorPane fx:id="friendPane" layoutX="4.0" layoutY="30.0" prefHeight="370.0" prefWidth="434.0" visible="false">
+      <children>
+        <Label id="username" fx:id="friendName" font="$x1" layoutX="199.0" layoutY="125.0" text="Nick" visible="true" />
+        <Button id="sendButton" fx:id="callFriendButton" layoutX="177.0" layoutY="156.0" mnemonicParsing="false" onAction="#callFromList" text="Zadzwoń" />
+        <Button id="sendButton" fx:id="deleteFromFriends" layoutX="148.0" layoutY="185.0" mnemonicParsing="false" onAction="#addOrDeleteFriend" text="Usuń z kontaktów" />
+      </children>
+    </AnchorPane>
+  </children>
+</AnchorPane>
