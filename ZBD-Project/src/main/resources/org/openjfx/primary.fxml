@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="790.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.PrimaryController">
+   <children>
+      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="750.0" prefWidth="840.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label alignment="CENTER" layoutX="288.0" layoutY="14.0" text="Metin2 - GM Application ">
+               <font>
+                  <Font name="Abyssinica SIL" size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="exitButton" layoutX="740.0" layoutY="730.0" mnemonicParsing="false" onAction="#exit" text="Exit">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="105.0" layoutY="197.0" mnemonicParsing="false" onAction="#switchToCharacters" text="Characters" />
+            <Button layoutX="389.0" layoutY="197.0" mnemonicParsing="false" onAction="#switchToItems" text="Items" />
+            <Button layoutX="122.0" layoutY="361.0" mnemonicParsing="false" onAction="#switchToUsers" text="Users" />
+            <Button layoutX="389.0" layoutY="361.0" mnemonicParsing="false" onAction="#switchToMaps" prefHeight="23.0" prefWidth="62.0" text="Maps" />
+            <Button layoutX="659.0" layoutY="356.0" mnemonicParsing="false" onAction="#switchToNPCs" prefHeight="26.0" prefWidth="52.0" text="NPCs" />
+            <Button layoutX="118.0" layoutY="514.0" mnemonicParsing="false" onAction="#switchToQuests" text="Quests" />
+            <Button layoutX="351.0" layoutY="514.0" mnemonicParsing="false" onAction="#switchToCharQuests" text="Characters Quests" />
+            <Button layoutX="654.0" layoutY="514.0" mnemonicParsing="false" onAction="#switchToPets" text="Pets" />
+            <Button layoutX="643.0" layoutY="197.0" mnemonicParsing="false" onAction="#switchToServers" text="Servers" />
+            <ImageView fitHeight="110.0" fitWidth="89.0" layoutX="108.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Shaman_Male.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="139.0" layoutX="362.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/FMS.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="110.0" layoutX="95.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="110.0" fitWidth="110.0" layoutX="365.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/map.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="95.0" fitWidth="52.0" layoutX="652.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/biolog.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="110.0" fitWidth="83.0" layoutX="109.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/chest.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="83.0" fitWidth="131.0" layoutX="613.0" layoutY="422.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/pet.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="83.0" fitWidth="83.0" layoutX="379.0" layoutY="418.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/char_quest.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="128.0" fitWidth="83.0" layoutX="511.0" layoutY="538.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/ninja.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

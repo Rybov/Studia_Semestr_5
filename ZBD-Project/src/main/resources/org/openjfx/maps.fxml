@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="790.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.MapsController">
+   <children>
+      <Button layoutX="740.0" layoutY="730.0" mnemonicParsing="false" onAction="#back" text="Back">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <TableView fx:id="mapsTable" layoutX="38.0" layoutY="82.0" onMouseClicked="#selectMap" prefHeight="200.0" prefWidth="754.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="367.0" text="Name" />
+          <TableColumn fx:id="fileColumn" prefWidth="386.0" text="File" />
+        </columns>
+      </TableView>
+      <Label layoutX="380.0" layoutY="14.0" text="Maps">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="223.0" layoutY="322.0" text="Name" />
+      <Label layoutX="231.0" layoutY="360.0" text="File" />
+      <TextField fx:id="nameField" layoutX="291.0" layoutY="317.0" prefHeight="26.0" prefWidth="313.0" />
+      <TextField fx:id="fileField" layoutX="291.0" layoutY="355.0" prefHeight="26.0" prefWidth="313.0" />
+      <Button layoutX="417.0" layoutY="405.0" mnemonicParsing="false" onMouseClicked="#addMap" text="Add" />
+      <Label layoutX="227.0" layoutY="501.0" text="Name" />
+      <Label layoutX="235.0" layoutY="539.0" text="File" />
+      <TextField fx:id="nameField1" layoutX="295.0" layoutY="496.0" prefHeight="26.0" prefWidth="313.0" />
+      <TextField fx:id="fileField1" layoutX="295.0" layoutY="534.0" prefHeight="26.0" prefWidth="313.0" />
+      <Button layoutX="406.0" layoutY="581.0" mnemonicParsing="false" onMouseClicked="#modifyMap" text="Modify" />
+      <Button layoutX="410.0" layoutY="667.0" mnemonicParsing="false" onAction="#deleteMap" text="Delete" />
+      <Label fx:id="warningLabel1" layoutX="351.0" layoutY="714.0" text="Please select map to delete" textFill="RED" />
+      <Label fx:id="warningLabel" layoutX="347.0" layoutY="626.0" text="Please select map to modify" textFill="RED" />
+      <TextField fx:id="filterNameField" layoutX="38.0" layoutY="282.0" onKeyTyped="#fillMapTable" prefHeight="26.0" prefWidth="371.0" promptText="Name" />
+      <TextField fx:id="filterFileField" layoutX="411.0" layoutY="282.0" onKeyTyped="#fillMapTable" prefHeight="26.0" prefWidth="381.0" promptText="File" />
+      <Label fx:id="warningLabel2" layoutX="376.0" layoutY="449.0" text="Name already used" textFill="RED" />
+   </children>
+</AnchorPane>

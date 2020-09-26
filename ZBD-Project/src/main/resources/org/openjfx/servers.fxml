@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="790.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.ServersController">
+   <children>
+      <Button layoutX="740.0" layoutY="730.0" mnemonicParsing="false" onAction="#back" text="Back">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <TableView fx:id="servertable" layoutX="28.0" layoutY="22.0" onMouseClicked="#selectServer" prefHeight="429.0" prefWidth="774.0">
+        <columns>
+          <TableColumn fx:id="serverid" prefWidth="87.0" text="ID" />
+          <TableColumn fx:id="servername" prefWidth="511.0" text="NAME" />
+            <TableColumn fx:id="serversize" prefWidth="175.0" text="AmoutofCharacter" />
+        </columns>
+      </TableView>
+      <TextField fx:id="n" layoutX="254.0" layoutY="502.0" prefHeight="26.0" prefWidth="310.0" />
+      <TextField fx:id="a" layoutX="254.0" layoutY="542.0" prefHeight="26.0" prefWidth="310.0" />
+      <Button layoutX="254.0" layoutY="593.0" mnemonicParsing="false" onMouseClicked="#addServer" text="ADD" />
+      <Text layoutX="172.0" layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAME" />
+      <Text layoutX="76.0" layoutY="560.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AMOUNTOFCHARACTER" />
+      <Button layoutX="495.0" layoutY="729.0" mnemonicParsing="false" onMouseClicked="#modifyServer" text="MODIFY" />
+      <Button layoutX="254.0" layoutY="729.0" mnemonicParsing="false" onMouseClicked="#deleteServer" text="DELETE" />
+      <TextField fx:id="n1" layoutX="256.0" layoutY="644.0" prefHeight="26.0" prefWidth="310.0" />
+      <TextField fx:id="a1" layoutX="256.0" layoutY="684.0" prefHeight="26.0" prefWidth="310.0" />
+      <Text layoutX="174.0" layoutY="662.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAME" />
+      <Text layoutX="78.0" layoutY="702.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AMOUNTOFCHARACTER" />
+      <TextField fx:id="fid" layoutX="28.0" layoutY="451.0" onKeyTyped="#fillServerTable" prefHeight="26.0" prefWidth="89.0" />
+      <TextField fx:id="fn" layoutX="114.0" layoutY="451.0" onKeyTyped="#fillServerTable" prefHeight="26.0" prefWidth="516.0" />
+      <TextField fx:id="fa" layoutX="631.0" layoutY="451.0" onKeyTyped="#fillServerTable" prefHeight="26.0" prefWidth="171.0" />
+      <Button layoutX="28.0" layoutY="489.0" mnemonicParsing="false" onMouseClicked="#clear" text="Clear" />
+      <Label fx:id="wl2" layoutX="375.0" layoutY="598.0" text="Label" />
+      <Label fx:id="wl1" layoutX="375.0" layoutY="738.0" text="Label" />
+   </children>
+</AnchorPane>

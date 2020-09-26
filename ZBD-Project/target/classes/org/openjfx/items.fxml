@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="790.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.ItemsController">
+   <children>
+      <Button layoutX="740.0" layoutY="730.0" mnemonicParsing="false" onAction="#back" text="Back">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <TableView fx:id="itemsTable" layoutX="48.0" layoutY="86.0" onMouseClicked="#itemSelected" prefHeight="200.0" prefWidth="735.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="350.0" text="Name" />
+          <TableColumn fx:id="typeColumn" prefWidth="139.0" text="Type" />
+            <TableColumn fx:id="attackColumn" prefWidth="123.0" text="Attack" />
+            <TableColumn fx:id="defenceColumn" prefWidth="121.0" text="Defence" />
+        </columns>
+      </TableView>
+      <Label layoutX="387.0" layoutY="14.0" text="Items">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameField" layoutX="98.0" layoutY="395.0" />
+      <Label layoutX="48.0" layoutY="400.0" text="Name" />
+      <Label layoutX="48.0" layoutY="442.0" text="Type" />
+      <Label layoutX="43.0" layoutY="487.0" text="Attack" />
+      <Label layoutX="37.0" layoutY="530.0" text="Defence" />
+      <TextField fx:id="defenceField" layoutX="98.0" layoutY="525.0" />
+      <TextField fx:id="attackField" layoutX="99.0" layoutY="482.0" />
+      <ChoiceBox fx:id="typeField" layoutX="99.0" layoutY="437.0" prefHeight="26.0" prefWidth="171.0" />
+      <Button fx:id="addButton" layoutX="290.0" layoutY="458.0" mnemonicParsing="false" onAction="#addItem" prefHeight="40.0" prefWidth="72.0" text="Add" />
+      <Label fx:id="warningLabel" layoutX="46.0" layoutY="573.0" text="Attack and Defence must be Integer type!" textFill="RED" />
+      <TextField fx:id="nameField1" layoutX="495.0" layoutY="385.0" />
+      <Label layoutX="445.0" layoutY="390.0" text="Name" />
+      <Label layoutX="445.0" layoutY="432.0" text="Type" />
+      <Label layoutX="440.0" layoutY="477.0" text="Attack" />
+      <Label layoutX="434.0" layoutY="520.0" text="Defence" />
+      <TextField fx:id="defenceField1" layoutX="495.0" layoutY="515.0" />
+      <TextField fx:id="attackField1" layoutX="496.0" layoutY="472.0" />
+      <ChoiceBox fx:id="typeField1" layoutX="496.0" layoutY="427.0" prefHeight="26.0" prefWidth="171.0" />
+      <Button fx:id="addButton1" layoutX="687.0" layoutY="448.0" mnemonicParsing="false" onAction="#modifyItem" prefHeight="40.0" prefWidth="72.0" text="Modify" />
+      <Label fx:id="warningLabel1" layoutX="443.0" layoutY="573.0" text="Attack and Defence must be Integer type!" textFill="RED" />
+      <Button layoutX="338.0" layoutY="666.0" mnemonicParsing="false" onAction="#deleteItem" text="Delete selected Item" />
+      <Label fx:id="warningLabel2" layoutX="325.0" layoutY="722.0" text="Please select item to delete" textFill="RED" />
+      <TextField fx:id="filterNameField" layoutX="48.0" layoutY="286.0" onKeyTyped="#fillItemsTable" prefHeight="26.0" prefWidth="353.0" promptText="Name" />
+      <TextField fx:id="filterTypeField" layoutX="403.0" layoutY="286.0" onKeyTyped="#fillItemsTable" prefHeight="26.0" prefWidth="131.0" promptText="Type" />
+      <TextField fx:id="filterAttackField" layoutX="534.0" layoutY="286.0" onKeyTyped="#fillItemsTable" prefHeight="26.0" prefWidth="131.0" promptText="Attack" />
+      <TextField fx:id="filterDefenceField" layoutX="666.0" layoutY="286.0" onKeyTyped="#fillItemsTable" prefHeight="26.0" prefWidth="117.0" promptText="Defence" />
+   </children>
+</AnchorPane>

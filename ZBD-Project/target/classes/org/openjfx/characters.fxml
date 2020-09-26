@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="790.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.CharactersController">
+   <children>
+      <Button layoutX="740.0" layoutY="730.0" mnemonicParsing="false" onAction="#back" text="Back">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <TableView fx:id="characterTable" layoutX="48.0" layoutY="52.0" onMouseClicked="#characterSelected" prefHeight="200.0" prefWidth="735.0">
+        <columns>
+          <TableColumn fx:id="idChar" prefWidth="44.0" text="id" />
+          <TableColumn fx:id="nameChar" prefWidth="106.0" text="Name" />
+            <TableColumn fx:id="userID" prefWidth="62.0" resizable="false" text="User ID" />
+            <TableColumn fx:id="classChar" prefWidth="71.0" text="Class" />
+            <TableColumn fx:id="genderChar" prefWidth="61.0" text="Gender" />
+            <TableColumn fx:id="lvlChar" prefWidth="40.0" text="Lvl" />
+            <TableColumn fx:id="expChar" prefWidth="63.0" text="Exp." />
+            <TableColumn fx:id="serverChar" prefWidth="64.0" text="Server" />
+            <TableColumn fx:id="attackChar" prefWidth="72.0" text="Attack" />
+            <TableColumn fx:id="defenceChar" prefWidth="75.0" text="Defence" />
+            <TableColumn fx:id="mapChar" prefWidth="75.0" text="Map" />
+        </columns>
+      </TableView>
+      <Label layoutX="350.0" layoutY="14.0" text="Characters">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="325.0" prefHeight="32.0" prefWidth="50.0" text="Pets">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="574.0" layoutY="330.0" text="Equipment">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TableView fx:id="petsTable" layoutX="29.0" layoutY="364.0" onMouseClicked="#petSelected" prefHeight="200.0" prefWidth="301.0">
+        <columns>
+            <TableColumn fx:id="idPetColumn" prefWidth="55.0" text="Pet id" />
+          <TableColumn fx:id="namePet" prefWidth="70.0" text="Name" />
+          <TableColumn fx:id="lvlPet" prefWidth="40.0" text="Lvl" />
+            <TableColumn fx:id="attackPet" minWidth="0.0" prefWidth="61.0" text="Attack" />
+            <TableColumn fx:id="defencePet" prefWidth="74.0" text="Defence" />
+        </columns>
+      </TableView>
+      <TableView fx:id="eqTable" layoutX="428.0" layoutY="364.0" onMouseClicked="#itemSelected" prefHeight="200.0" prefWidth="383.0">
+         <columns>
+            <TableColumn fx:id="nameEq" prefWidth="96.0" text="Name" />
+            <TableColumn fx:id="lvlEq" prefWidth="54.0" text="Lvl" />
+            <TableColumn fx:id="attackEq" prefWidth="75.0" text="Attack" />
+            <TableColumn fx:id="defenceEq" prefWidth="75.0" text="Defence" />
+            <TableColumn fx:id="wearedEq" prefWidth="75.0" text="Weared" />
+         </columns>
+      </TableView>
+      <Button layoutX="29.0" layoutY="587.0" mnemonicParsing="false" onAction="#addPet" prefHeight="26.0" prefWidth="62.0" text="Add" />
+      <Button layoutX="428.0" layoutY="588.0" mnemonicParsing="false" onAction="#addItem" text="Add" />
+      <Button layoutX="149.0" layoutY="588.0" mnemonicParsing="false" onAction="#modifyPet" prefHeight="26.0" prefWidth="62.0" text="Modify" />
+      <Button layoutX="589.0" layoutY="588.0" mnemonicParsing="false" onAction="#modifyItem" text="Modify" />
+      <Button layoutX="269.0" layoutY="588.0" mnemonicParsing="false" onAction="#deletePet" text="Delete" />
+      <Button layoutX="752.0" layoutY="588.0" mnemonicParsing="false" onAction="#deleteItem" text="Delete" />
+      <TextField fx:id="nameField" layoutX="95.0" layoutY="652.0" prefHeight="26.0" prefWidth="99.0" />
+      <Button fx:id="confirmButton" layoutX="466.0" layoutY="736.0" mnemonicParsing="false" onAction="#confirmChange" text="Confirm" />
+      <Label fx:id="nameLabel" layoutX="30.0" layoutY="657.0" text="Name" />
+      <TextField fx:id="lvlField" layoutX="95.0" layoutY="684.0" prefHeight="26.0" prefWidth="99.0" />
+      <TextField fx:id="attackField" layoutX="95.0" layoutY="717.0" prefHeight="26.0" prefWidth="99.0" />
+      <TextField fx:id="defenceField" layoutX="95.0" layoutY="749.0" prefHeight="26.0" prefWidth="99.0" />
+      <Label fx:id="lvlLabel" layoutX="39.0" layoutY="689.0" text="Lvl" />
+      <Label fx:id="attackLabel" layoutX="28.0" layoutY="722.0" text="Attack" />
+      <Label fx:id="defenceLabel" layoutX="22.0" layoutY="754.0" text="Defence" />
+      <Label fx:id="classLabel" layoutX="241.0" layoutY="657.0" text="Class" />
+      <Label fx:id="userIDLabel" layoutX="234.0" layoutY="689.0" text="User ID" />
+      <Label fx:id="genderLabel" layoutX="234.0" layoutY="722.0" text="Gender" />
+      <Label fx:id="expLabel" layoutX="246.0" layoutY="754.0" text="Exp" />
+      <Label fx:id="serverLabel" layoutX="399.0" layoutY="657.0" text="Server" />
+      <Label fx:id="mapLabel" layoutX="406.0" layoutY="689.0" text="Map" />
+      <TextField fx:id="userIDField" layoutX="288.0" layoutY="684.0" prefHeight="26.0" prefWidth="99.0" />
+      <TextField fx:id="expField" layoutX="288.0" layoutY="749.0" prefHeight="26.0" prefWidth="99.0" />
+      <Label fx:id="wearedLabel" layoutX="233.0" layoutY="657.0" text="Weared" />
+      <ChoiceBox fx:id="wearedField" layoutX="288.0" layoutY="652.0" prefHeight="26.0" prefWidth="99.0" />
+      <ChoiceBox fx:id="classField" layoutX="288.0" layoutY="652.0" prefHeight="26.0" prefWidth="99.0" />
+      <ChoiceBox fx:id="genderField" layoutX="288.0" layoutY="717.0" prefHeight="26.0" prefWidth="99.0" />
+      <ChoiceBox fx:id="serverField" layoutX="451.0" layoutY="652.0" prefHeight="26.0" prefWidth="99.0" />
+      <ChoiceBox fx:id="mapField" layoutX="451.0" layoutY="684.0" prefHeight="26.0" prefWidth="99.0" />
+      <Button layoutX="219.0" layoutY="299.0" mnemonicParsing="false" onAction="#addChar" text="Add" />
+      <Button layoutX="338.0" layoutY="299.0" mnemonicParsing="false" onAction="#modifyChar" text="Modify" />
+      <Button layoutX="460.0" layoutY="299.0" mnemonicParsing="false" onAction="#deleteChar" text="Delete" />
+      <Label fx:id="warningLabel" layoutX="594.0" layoutY="634.0" prefHeight="63.0" prefWidth="189.0" text="Warning" textFill="RED" wrapText="true" />
+      <Label fx:id="petIdLabel" layoutX="240.0" layoutY="657.0" text="Pet id" />
+      <ChoiceBox fx:id="petIdField" layoutX="288.0" layoutY="652.0" prefHeight="26.0" prefWidth="99.0" />
+      <ChoiceBox fx:id="itemIdField" layoutX="95.0" layoutY="652.0" prefHeight="26.0" prefWidth="99.0" />
+      <Label fx:id="itemIdLabel" layoutX="33.0" layoutY="657.0" text="Item" />
+      <TextField fx:id="filterIdField" layoutX="50.0" layoutY="252.0" onKeyTyped="#fillCharTable" prefHeight="26.0" prefWidth="42.0" promptText="id" />
+      <TextField fx:id="filterNameField" layoutX="93.0" layoutY="252.0" onKeyTyped="#fillCharTable" prefHeight="26.0" prefWidth="110.0" promptText="Name" />
+      <TextField fx:id="filterUserIDField" layoutX="202.0" layoutY="252.0" onKeyTyped="#fillCharTable" prefHeight="26.0" prefWidth="62.0" promptText="User ID" />
+      <TextField fx:id="filterClassField" layoutX="265.0" layoutY="252.0" onKeyTyped="#fillCharTable" prefHeight="26.0" prefWidth="70.0" promptText="Class" />
+      <TextField fx:id="filterGenderField" layoutX="336.0" layoutY="252.0" onKeyTyped="#fillCharTable" prefHeight="26.0" prefWidth="54.0" promptText="Gender" />
+      <TextField fx:id="filterLvlField" layoutX="391.0" layoutY="252.0" onKeyTyped="#fillCharTable" prefHeight="26.0" prefWidth="44.0" promptText="Lvl" />
+      <TextField fx:id="filterExpField" layoutX="436.0" layoutY="252.0" onKeyTyped="#fillCharTable" prefHeight="26.0" prefWidth="62.0" promptText="Exp" />
+      <TextField fx:id="filterServerField" layoutX="499.0" layoutY="252.0" onKeyTyped="#fillCharTable" prefHeight="26.0" prefWidth="61.0" promptText="Server" />
+      <TextField fx:id="filterAttackField" layoutX="561.0" layoutY="252.0" onKeyTyped="#fillCharTable" prefHeight="26.0" prefWidth="70.0" promptText="Attack" />
+      <TextField fx:id="filterDefenceField" layoutX="632.0" layoutY="252.0" onKeyTyped="#fillCharTable" prefHeight="26.0" prefWidth="70.0" promptText="Defence" />
+      <TextField fx:id="filterMapField" layoutX="703.0" layoutY="252.0" onKeyTyped="#fillCharTable" prefHeight="26.0" prefWidth="80.0" promptText="Map" />
+   </children>
+</AnchorPane>

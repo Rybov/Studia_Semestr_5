@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="790.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.UsersController">
+   <children>
+      <Button layoutX="740.0" layoutY="730.0" mnemonicParsing="false" onAction="#back" text="Back">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <TableView fx:id="usertable" layoutX="32.0" layoutY="51.0" onMouseClicked="#selectUser" prefHeight="382.0" prefWidth="787.0" AnchorPane.bottomAnchor="357.0">
+        <columns>
+          <TableColumn fx:id="userid" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="useremail" prefWidth="249.0" text="Email" />
+            <TableColumn fx:id="userlog" prefWidth="235.0" text="Login" />
+            <TableColumn fx:id="userpass" minWidth="0.0" prefWidth="224.0" text="Password" />
+        </columns>
+      </TableView>
+      <TextField fx:id="em" layoutX="257.0" layoutY="470.0" prefHeight="26.0" prefWidth="310.0" />
+      <TextField fx:id="l" layoutX="257.0" layoutY="510.0" prefHeight="26.0" prefWidth="310.0" />
+      <TextField fx:id="p" layoutX="257.0" layoutY="550.0" prefHeight="26.0" prefWidth="310.0" />
+      <Button layoutX="257.0" layoutY="591.0" mnemonicParsing="false" onMouseClicked="#addUser" text="Add" />
+      <Text layoutX="175.0" layoutY="488.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+      <Text layoutX="174.0" layoutY="527.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" />
+      <Text layoutX="157.0" layoutY="567.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+      <TextField fx:id="em1" layoutX="257.0" layoutY="632.0" prefHeight="26.0" prefWidth="310.0" />
+      <TextField fx:id="l1" layoutX="257.0" layoutY="672.0" prefHeight="26.0" prefWidth="310.0" />
+      <TextField fx:id="p1" layoutX="257.0" layoutY="712.0" prefHeight="26.0" prefWidth="310.0" />
+      <Button layoutX="498.0" layoutY="750.0" mnemonicParsing="false" onMouseClicked="#modifyUser" text="Modify" />
+      <Text layoutX="175.0" layoutY="650.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+      <Text layoutX="174.0" layoutY="689.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" />
+      <Text layoutX="157.0" layoutY="729.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+      <TextField fx:id="fid" layoutX="32.0" layoutY="433.0" onKeyTyped="#fillUserTable" prefHeight="26.0" prefWidth="94.0" promptText="ID" />
+      <TextField fx:id="fem" layoutX="123.0" layoutY="433.0" onKeyTyped="#fillUserTable" prefHeight="26.0" prefWidth="232.0" promptText="Email" />
+      <TextField fx:id="fl" layoutX="355.0" layoutY="433.0" onKeyTyped="#fillUserTable" prefHeight="26.0" prefWidth="232.0" promptText="Login" />
+      <TextField fx:id="fp" layoutX="589.0" layoutY="433.0" onKeyTyped="#fillUserTable" prefHeight="26.0" prefWidth="232.0" promptText="Password" />
+      <Button layoutX="32.0" layoutY="470.0" mnemonicParsing="false" onMouseClicked="#clear" text="Clear" />
+      <Button layoutX="257.0" layoutY="750.0" mnemonicParsing="false" onMouseClicked="#deleteUser" text="Delete" />
+      <Label fx:id="warningLabel2" layoutX="309.0" layoutY="596.0" text="Incorrect input" textFill="RED" />
+      <Label fx:id="warningLabel1" layoutX="330.0" layoutY="754.0" text="Incorrect input" textFill="#e10606" />
+      <Label layoutX="377.0" layoutY="14.0" text="Users">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
